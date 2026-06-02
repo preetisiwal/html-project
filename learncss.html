@@ -1,8 +1,23 @@
 <html>
     <head>
       <style>
+         body
+         {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*A background is REQUIRED for the blur to be visible*/
+            background: linear-gradient (135deg ,#667eea 0%,#764ba2 50%,#f093fb 100%);
+            font-family:sans-serif;
+         }
          .card
          {
+            padding: 40px 60px;
+            color :aqua;
+            font-size: 1.2rem;
+
             background-color: rgba(255,255,255,020); 
             backdrop-filter: blur(10px) saturate(180%);
             -webkit-backdrop-filter: blur(10px) saturation(180%);
