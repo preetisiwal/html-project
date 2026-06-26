@@ -6,8 +6,10 @@
         <form>
             <label for="value1">Number 1:</label>
             <INput id="value1" type="Number"></INput>
+            <br>
             <label for="value2">Number 2:</label>
             <input id="value2" type="Number"></input>
+            <br>
             <label>Result =</label>
             <div id="result"></div>
 
@@ -28,6 +30,39 @@
 
                 document.getElementById("result").innerHTML=result;
 
+            }
+            function substraction()
+            {
+                var data1 = Number(document.getElementById("value1").value)
+                var data2 = Number(document.getElementById("value2").value)
+                var result = data1-data2;
+
+                document.getElementById("result").innerHTML=result;
+
+            }
+            function multiply()
+            {
+              var data1 = Number(document.getElementById("value1").value)
+              var data2 = Number(document.getElementById("value2").value)
+              var result = data1*data2;
+              
+              document.getElementById("result").innerHTML=result;
+            }
+            function divide()
+            {
+                var data1 = Number(document.getElementById("value1").value)
+                var data2 = Number(document.getElementById("value2").value)
+                var result = data1/data2;
+
+                document.getElementById("result").innerHTML=result;
+            }
+            function module()
+            {
+                var data1 = Number(document.getElementById("value1").value)
+                var data2 = Number(document.getElementById("value2").value)
+                var result = data1%data2;
+
+                document.getElementById("result").innerHTML=result;
             }
         </script>
     </body>
